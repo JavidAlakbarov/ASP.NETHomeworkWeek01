@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "PMAdnL9nTOurNuoCDwIqtSxvKDQyxnXBzErIMACL8uc=",
+  "Source": "ASP.NETHomeworkWeek01",
+  "BasePath": "_content/ASP.NETHomeworkWeek01",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "ASP.NETHomeworkWeek01\\wwwroot",
+      "Source": "ASP.NETHomeworkWeek01",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Рабочий стол\\ASP.NETHomeworkWeek01\\ASP.NETHomeworkWeek01\\wwwroot\\",
+      "BasePath": "_content/ASP.NETHomeworkWeek01",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}

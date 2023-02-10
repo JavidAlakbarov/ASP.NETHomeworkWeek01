@@ -10,6 +10,7 @@ namespace ASP.NETHomeworkWeek01.Controllers
     {
         public static List<Book> _books = new List<Book>();
 
+
         [HttpPost("Create a Book")]
         public Book createBook(Book book)
         {
@@ -17,11 +18,13 @@ namespace ASP.NETHomeworkWeek01.Controllers
             return book;
         }
 
+
         [HttpGet("Get all Books")]
         public List<Book> getAll()
         {
             return _books;
         }
+
 
         [HttpGet("Get a Book by ID")]
         public IActionResult getBookId(int ID)
@@ -37,6 +40,7 @@ namespace ASP.NETHomeworkWeek01.Controllers
             return NotFound("Can't find a book");
         }
 
+
         [HttpPut("Update a Book")]
         public Book UpdateBook(int id,Book book)
         {
@@ -49,13 +53,13 @@ namespace ASP.NETHomeworkWeek01.Controllers
             return bookExists;
         }
 
+
         [HttpDelete("Delete a Book")]
         public IActionResult DeleteBook(int id)
         {
             foreach(var book in _books)
             {
                 var bookExists = _books.FirstOrDefault(x => x.ID == id);
-                //_books.Remove(bookExists);
                 if (bookExists != null)
                 {
                     _books.Remove(bookExists);
